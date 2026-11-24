@@ -24,6 +24,7 @@ Requires Python 3.11 (pinned in `.python-version`) and [uv](https://docs.astral.
 If Python 3.11 is not installed, `uv python install 3.11` fetches it.
 
 ```bash
+git clone https://github.com/agentic-ai-rakesh/rayda-fleet-copilot.git && cd rayda-fleet-copilot
 make setup      # create .venv on Python 3.11 and install the project with dev tools
 make ingest     # validate the dataset and build data/processed/fleet.db
 make profile    # write reports/data_profile.md
