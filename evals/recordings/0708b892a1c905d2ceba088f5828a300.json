@@ -1,0 +1,14 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": false,
+  "answer": "None \u2014 device `DARFCP0BQM2G` was not found in Acme's fleet as of 2026-06-12T11:00:00Z.\n\nThe device details are missing because the tool did not return a device record for `DARFCP0BQM2G`.",
+  "claims": [],
+  "caveats": [
+   "The tool result did not include any evidence snapshot ids, so there are no snapshot ids available to cite.",
+   "Because the device was not found, no device details were returned."
+  ]
+ }
+}

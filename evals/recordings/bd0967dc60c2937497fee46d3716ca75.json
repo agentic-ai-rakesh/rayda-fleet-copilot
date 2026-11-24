@@ -1,0 +1,35 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": true,
+  "answer": "2 of 5 macOS devices are on a version older than macOS 15 as of 2026-06-12T11:00:00Z [4SEFDLPTKXAM@20260612T0834Z, QPZSXKINA7GP@20260612T1004Z].\n\n- 4SEFDLPTKXAM (MacBook Air) is running macOS 13.6 [4SEFDLPTKXAM@20260612T0834Z].\n- QPZSXKINA7GP (MacBook Pro) is running macOS 14.5 [QPZSXKINA7GP@20260612T1004Z].",
+  "claims": [
+   {
+    "statement": "2 of 5 macOS devices are on a version older than macOS 15 as of 2026-06-12T11:00:00Z.",
+    "evidence_ids": [
+     "4SEFDLPTKXAM@20260612T0834Z",
+     "QPZSXKINA7GP@20260612T1004Z"
+    ]
+   },
+   {
+    "statement": "Device 4SEFDLPTKXAM is a MacBook Air running macOS 13.6.",
+    "evidence_ids": [
+     "4SEFDLPTKXAM@20260612T0834Z"
+    ]
+   },
+   {
+    "statement": "Device QPZSXKINA7GP is a MacBook Pro running macOS 14.5.",
+    "evidence_ids": [
+     "QPZSXKINA7GP@20260612T1004Z"
+    ]
+   }
+  ],
+  "caveats": [
+   "Threshold used: macOS version below 15.",
+   "Values come from each device's latest snapshot, with the dataset as of 2026-06-12T11:00:00Z.",
+   "3 device(s) on other operating systems were not counted."
+  ]
+ }
+}

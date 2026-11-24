@@ -1,0 +1,21 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Show the current laptops that are failing high-severity compliance checks.",
+  "steps": [
+   {
+    "tool": "get_compliance_status",
+    "purpose": "Find devices currently failing high-severity compliance checks and return check ids and affected devices."
+   },
+   {
+    "tool": "list_devices",
+    "purpose": "Identify which failing devices are laptops, if the compliance results do not already include device type."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

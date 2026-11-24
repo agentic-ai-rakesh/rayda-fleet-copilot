@@ -1,0 +1,61 @@
+{
+ "purpose": "executor",
+ "model": "gpt-5.5",
+ "kind": "ai_message",
+ "value": {
+  "type": "ai",
+  "data": {
+   "content": "No \u2014 as of 2026-06-12T11:00:00Z, 0 of 5 Initech laptops are failing high-severity compliance checks.",
+   "additional_kwargs": {
+    "refusal": null
+   },
+   "response_metadata": {
+    "token_usage": {
+     "completion_tokens": 38,
+     "prompt_tokens": 2328,
+     "total_tokens": 2366,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1664,
+      "image_tokens": null,
+      "text_tokens": null
+     }
+    },
+    "model_provider": "openai",
+    "model_name": "gpt-5.5-2026-04-23",
+    "system_fingerprint": null,
+    "id": "chatcmpl-EnLvfTLuyjMd46Ayu989Cb0yzKE0M",
+    "service_tier": "default",
+    "finish_reason": "stop",
+    "logprobs": null,
+    "normalized_finish_reason": "stop"
+   },
+   "type": "ai",
+   "name": null,
+   "id": "lc_run--01a20808-0cb9-7007-9cf5-cffc51992712-0",
+   "tool_calls": [],
+   "invalid_tool_calls": [],
+   "usage_metadata": {
+    "input_tokens": 2328,
+    "output_tokens": 38,
+    "total_tokens": 2366,
+    "input_token_details": {
+     "audio": 0,
+     "cache_read": 1664
+    },
+    "output_token_details": {
+     "audio": 0,
+     "reasoning": 0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "purpose": "executor",
+ "model": "gpt-5.5",
+ "kind": "ai_message",
+ "value": {
+  "type": "ai",
+  "data": {
+   "content": "Evidence is gathered.",
+   "additional_kwargs": {
+    "refusal": null
+   },
+   "response_metadata": {
+    "token_usage": {
+     "completion_tokens": 7,
+     "prompt_tokens": 3141,
+     "total_tokens": 3148,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1664,
+      "image_tokens": null,
+      "text_tokens": null
+     }
+    },
+    "model_provider": "openai",
+    "model_name": "gpt-5.5-2026-04-23",
+    "system_fingerprint": null,
+    "id": "chatcmpl-EnM0cX1xxtAM6qdALAQ5YizDZS6A8",
+    "service_tier": "default",
+    "finish_reason": "stop",
+    "logprobs": null,
+    "normalized_finish_reason": "stop"
+   },
+   "type": "ai",
+   "name": null,
+   "id": "lc_run--01a2080c-bd06-725c-b9e1-4cc0e95ffae1-0",
+   "tool_calls": [],
+   "invalid_tool_calls": [],
+   "usage_metadata": {
+    "input_tokens": 3141,
+    "output_tokens": 7,
+    "total_tokens": 3148,
+    "input_token_details": {
+     "audio": 0,
+     "cache_read": 1664
+    },
+    "output_token_details": {
+     "audio": 0,
+     "reasoning": 0
+    }
+   }
+  }
+ }
+}

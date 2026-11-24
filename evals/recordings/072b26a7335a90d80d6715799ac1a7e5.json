@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Which Initech devices currently fail the screen lock compliance check?",
+  "steps": [
+   {
+    "tool": "get_compliance_status",
+    "purpose": "List devices currently failing the screen lock compliance check"
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

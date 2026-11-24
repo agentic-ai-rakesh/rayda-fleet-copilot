@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "insight",
+  "restated_question": "Determine whether screen lock compliance has drifted over the last month for Acme-managed devices.",
+  "steps": [
+   {
+    "tool": "detect_compliance_drift",
+    "purpose": "Identify devices that started failing or recovered for the screen lock compliance check over the last month, and compare fleet-wide failing counts at the start and end of the window."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

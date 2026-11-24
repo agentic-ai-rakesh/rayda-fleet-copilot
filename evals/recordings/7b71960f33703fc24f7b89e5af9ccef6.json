@@ -1,0 +1,55 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": true,
+  "answer": "2 devices are consistently low on storage as of 2026-06-12T11:00:00Z: DARFCP0BQM2G and RLD7WV7J82SH [DARFCP0BQM2G@20260514T0953Z, DARFCP0BQM2G@20260612T1031Z, RLD7WV7J82SH@20260514T0933Z, RLD7WV7J82SH@20260612T0850Z].\n\n- **DARFCP0BQM2G** \u2014 Finding: DARFCP0BQM2G has 2.0% system disk free (was 12.1%), below 15% in 100% of 30 snapshots; falling 0.35 points/day [DARFCP0BQM2G@20260514T0953Z, DARFCP0BQM2G@20260612T1031Z]. Supporting evidence: 12.14% free at 2026-05-14T09:53:00Z, then 2.0% free at 2026-06-12T10:31:00Z [DARFCP0BQM2G@20260514T0953Z, DARFCP0BQM2G@20260612T1031Z]. Explanation: Below 15% free, updates and apps start failing; at 5% the system is close to full, and this device is already at or below the critical level [DARFCP0BQM2G@20260612T1031Z].\n- **RLD7WV7J82SH** \u2014 Finding: RLD7WV7J82SH has 2.0% system disk free (was 7.5%), below 15% in 100% of 30 snapshots; falling 0.21 points/day [RLD7WV7J82SH@20260514T0933Z, RLD7WV7J82SH@20260612T0850Z]. Supporting evidence: 7.49% free at 2026-05-14T09:33:00Z, then 2.0% free at 2026-06-12T08:50:00Z [RLD7WV7J82SH@20260514T0933Z, RLD7WV7J82SH@20260612T0850Z]. Explanation: Below 15% free, updates and apps start failing; at 5% the system is close to full, and this device is already at or below the critical level [RLD7WV7J82SH@20260612T0850Z].",
+  "claims": [
+   {
+    "statement": "There are 2 devices consistently low on storage as of 2026-06-12T11:00:00Z: DARFCP0BQM2G and RLD7WV7J82SH.",
+    "evidence_ids": [
+     "DARFCP0BQM2G@20260514T0953Z",
+     "DARFCP0BQM2G@20260612T1031Z",
+     "RLD7WV7J82SH@20260514T0933Z",
+     "RLD7WV7J82SH@20260612T0850Z"
+    ]
+   },
+   {
+    "statement": "DARFCP0BQM2G has 2.0% system disk free, was 12.1%, was below 15% in 100% of 30 snapshots, and is falling 0.35 points/day.",
+    "evidence_ids": [
+     "DARFCP0BQM2G@20260514T0953Z",
+     "DARFCP0BQM2G@20260612T1031Z"
+    ]
+   },
+   {
+    "statement": "DARFCP0BQM2G had 12.14% free at 2026-05-14T09:53:00Z and 2.0% free at 2026-06-12T10:31:00Z.",
+    "evidence_ids": [
+     "DARFCP0BQM2G@20260514T0953Z",
+     "DARFCP0BQM2G@20260612T1031Z"
+    ]
+   },
+   {
+    "statement": "RLD7WV7J82SH has 2.0% system disk free, was 7.5%, was below 15% in 100% of 30 snapshots, and is falling 0.21 points/day.",
+    "evidence_ids": [
+     "RLD7WV7J82SH@20260514T0933Z",
+     "RLD7WV7J82SH@20260612T0850Z"
+    ]
+   },
+   {
+    "statement": "RLD7WV7J82SH had 7.49% free at 2026-05-14T09:33:00Z and 2.0% free at 2026-06-12T08:50:00Z.",
+    "evidence_ids": [
+     "RLD7WV7J82SH@20260514T0933Z",
+     "RLD7WV7J82SH@20260612T0850Z"
+    ]
+   }
+  ],
+  "caveats": [
+   "Telemetry is as of 2026-06-12T11:00:00Z.",
+   "The tool used this window: 2026-05-13T11:00:00Z to 2026-06-12T11:00:00Z.",
+   "Low disk threshold: system volume free space < 15%; critical threshold: \u2264 5%.",
+   "Days until critical is a straight-line projection of the daily trend.",
+   "The tool checked 7 devices and skipped none."
+  ]
+ }
+}

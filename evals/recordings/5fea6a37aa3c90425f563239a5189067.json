@@ -1,0 +1,27 @@
+{
+ "purpose": "action_proposer",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "proposals": [
+   {
+    "action": "create_upgrade_order",
+    "device_id": "I3JLKILKQTAC",
+    "employee_id": null,
+    "component": "ram",
+    "spec": "16 GB",
+    "check_id": null,
+    "note": null,
+    "reason": null,
+    "message": null,
+    "justification": "Device I3JLKILKQTAC has 8 GB RAM and is consistently memory-constrained as of 2026-06-12T11:00:00Z: memory use was \u226585% in 100% of 30 snapshots, with average 91.8%, peak 98.45%, and latest 88.98%. Doubling RAM to 16 GB is a sensible upgrade based on the current 8 GB RAM evidence.",
+    "evidence_ids": [
+     "I3JLKILKQTAC@20260514T0919Z",
+     "I3JLKILKQTAC@20260611T0906Z",
+     "I3JLKILKQTAC@20260612T1057Z"
+    ]
+   }
+  ],
+  "no_action_reason": null
+ }
+}

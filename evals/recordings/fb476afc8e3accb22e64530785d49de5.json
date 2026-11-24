@@ -1,0 +1,78 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": true,
+  "answer": "**5 devices drifted into `screen_lock` non-compliance**; failing devices for `screen_lock` changed from **0 \u2192 5** over **2026-05-14 \u2192 2026-06-12** [1LYSSFD074BB@20260521T0945Z, 1LYSSFD074BB@20260522T0941Z, 1LYSSFD074BB@20260612T0947Z, 8NM23J95R5I6@20260529T1116Z, 8NM23J95R5I6@20260530T0838Z, 8NM23J95R5I6@20260612T0902Z, DLT35MHGTH2D@20260531T0937Z, DLT35MHGTH2D@20260601T1014Z, DLT35MHGTH2D@20260612T0936Z, DSYPSES7SKBB@20260531T1031Z, DSYPSES7SKBB@20260601T1020Z, DSYPSES7SKBB@20260612T1057Z, MT7PJB7N5LRE@20260527T1003Z, MT7PJB7N5LRE@20260528T0932Z, MT7PJB7N5LRE@20260612T0839Z].\n\nAs of **2026-06-12T11:00:00Z**, the drift findings are:\n\n- **1LYSSFD074BB** \u2014 Finding: started failing `screen_lock` on **2026-05-22T09:41:00Z** and has failed in all **22** snapshots since [1LYSSFD074BB@20260521T0945Z, 1LYSSFD074BB@20260522T0941Z, 1LYSSFD074BB@20260612T0947Z]. Supporting evidence: it passed on 2026-05-21, failed on 2026-05-22, and was still failing on 2026-06-12 [1LYSSFD074BB@20260521T0945Z, 1LYSSFD074BB@20260522T0941Z, 1LYSSFD074BB@20260612T0947Z]. Explanation: it was compliant earlier in the window and has not recovered [1LYSSFD074BB@20260521T0945Z, 1LYSSFD074BB@20260612T0947Z].\n- **8NM23J95R5I6** \u2014 Finding: started failing `screen_lock` on **2026-05-30T08:38:00Z** and has failed in all **14** snapshots since [8NM23J95R5I6@20260529T1116Z, 8NM23J95R5I6@20260530T0838Z, 8NM23J95R5I6@20260612T0902Z]. Supporting evidence: it passed on 2026-05-29, failed on 2026-05-30, and was still failing on 2026-06-12 [8NM23J95R5I6@20260529T1116Z, 8NM23J95R5I6@20260530T0838Z, 8NM23J95R5I6@20260612T0902Z]. Explanation: it was compliant earlier in the window and has not recovered [8NM23J95R5I6@20260529T1116Z, 8NM23J95R5I6@20260612T0902Z].\n- **DLT35MHGTH2D** \u2014 Finding: started failing `screen_lock` on **2026-06-01T10:14:00Z** and has failed in all **12** snapshots since [DLT35MHGTH2D@20260531T0937Z, DLT35MHGTH2D@20260601T1014Z, DLT35MHGTH2D@20260612T0936Z]. Supporting evidence: it passed on 2026-05-31, failed on 2026-06-01, and was still failing on 2026-06-12 [DLT35MHGTH2D@20260531T0937Z, DLT35MHGTH2D@20260601T1014Z, DLT35MHGTH2D@20260612T0936Z]. Explanation: it was compliant earlier in the window and has not recovered [DLT35MHGTH2D@20260531T0937Z, DLT35MHGTH2D@20260612T0936Z].\n- **DSYPSES7SKBB** \u2014 Finding: started failing `screen_lock` on **2026-06-01T10:20:00Z** and has failed in all **12** snapshots since [DSYPSES7SKBB@20260531T1031Z, DSYPSES7SKBB@20260601T1020Z, DSYPSES7SKBB@20260612T1057Z]. Supporting evidence: it passed on 2026-05-31, failed on 2026-06-01, and was still failing on 2026-06-12 [DSYPSES7SKBB@20260531T1031Z, DSYPSES7SKBB@20260601T1020Z, DSYPSES7SKBB@20260612T1057Z]. Explanation: it was compliant earlier in the window and has not recovered [DSYPSES7SKBB@20260531T1031Z, DSYPSES7SKBB@20260612T1057Z].\n- **MT7PJB7N5LRE** \u2014 Finding: started failing `screen_lock` on **2026-05-28T09:32:00Z** and has failed in all **16** snapshots since [MT7PJB7N5LRE@20260527T1003Z, MT7PJB7N5LRE@20260528T0932Z, MT7PJB7N5LRE@20260612T0839Z]. Supporting evidence: it passed on 2026-05-27, failed on 2026-05-28, and was still failing on 2026-06-12 [MT7PJB7N5LRE@20260527T1003Z, MT7PJB7N5LRE@20260528T0932Z, MT7PJB7N5LRE@20260612T0839Z]. Explanation: it was compliant earlier in the window and has not recovered [MT7PJB7N5LRE@20260527T1003Z, MT7PJB7N5LRE@20260612T0839Z].",
+  "claims": [
+   {
+    "statement": "5 devices drifted into screen_lock non-compliance, and failing devices for screen_lock changed from 0 to 5 over 2026-05-14 to 2026-06-12.",
+    "evidence_ids": [
+     "1LYSSFD074BB@20260521T0945Z",
+     "1LYSSFD074BB@20260522T0941Z",
+     "1LYSSFD074BB@20260612T0947Z",
+     "8NM23J95R5I6@20260529T1116Z",
+     "8NM23J95R5I6@20260530T0838Z",
+     "8NM23J95R5I6@20260612T0902Z",
+     "DLT35MHGTH2D@20260531T0937Z",
+     "DLT35MHGTH2D@20260601T1014Z",
+     "DLT35MHGTH2D@20260612T0936Z",
+     "DSYPSES7SKBB@20260531T1031Z",
+     "DSYPSES7SKBB@20260601T1020Z",
+     "DSYPSES7SKBB@20260612T1057Z",
+     "MT7PJB7N5LRE@20260527T1003Z",
+     "MT7PJB7N5LRE@20260528T0932Z",
+     "MT7PJB7N5LRE@20260612T0839Z"
+    ]
+   },
+   {
+    "statement": "1LYSSFD074BB passed screen_lock on 2026-05-21T09:45:00Z, started failing screen_lock on 2026-05-22T09:41:00Z, has failed in all 22 snapshots since, and was still failing on 2026-06-12T09:47:00Z.",
+    "evidence_ids": [
+     "1LYSSFD074BB@20260521T0945Z",
+     "1LYSSFD074BB@20260522T0941Z",
+     "1LYSSFD074BB@20260612T0947Z"
+    ]
+   },
+   {
+    "statement": "8NM23J95R5I6 passed screen_lock on 2026-05-29T11:16:00Z, started failing screen_lock on 2026-05-30T08:38:00Z, has failed in all 14 snapshots since, and was still failing on 2026-06-12T09:02:00Z.",
+    "evidence_ids": [
+     "8NM23J95R5I6@20260529T1116Z",
+     "8NM23J95R5I6@20260530T0838Z",
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   },
+   {
+    "statement": "DLT35MHGTH2D passed screen_lock on 2026-05-31T09:37:00Z, started failing screen_lock on 2026-06-01T10:14:00Z, has failed in all 12 snapshots since, and was still failing on 2026-06-12T09:36:00Z.",
+    "evidence_ids": [
+     "DLT35MHGTH2D@20260531T0937Z",
+     "DLT35MHGTH2D@20260601T1014Z",
+     "DLT35MHGTH2D@20260612T0936Z"
+    ]
+   },
+   {
+    "statement": "DSYPSES7SKBB passed screen_lock on 2026-05-31T10:31:00Z, started failing screen_lock on 2026-06-01T10:20:00Z, has failed in all 12 snapshots since, and was still failing on 2026-06-12T10:57:00Z.",
+    "evidence_ids": [
+     "DSYPSES7SKBB@20260531T1031Z",
+     "DSYPSES7SKBB@20260601T1020Z",
+     "DSYPSES7SKBB@20260612T1057Z"
+    ]
+   },
+   {
+    "statement": "MT7PJB7N5LRE passed screen_lock on 2026-05-27T10:03:00Z, started failing screen_lock on 2026-05-28T09:32:00Z, has failed in all 16 snapshots since, and was still failing on 2026-06-12T08:39:00Z.",
+    "evidence_ids": [
+     "MT7PJB7N5LRE@20260527T1003Z",
+     "MT7PJB7N5LRE@20260528T0932Z",
+     "MT7PJB7N5LRE@20260612T0839Z"
+    ]
+   }
+  ],
+  "caveats": [
+   "Telemetry is as of 2026-06-12T11:00:00Z.",
+   "The drift window is 2026-05-13T11:00:00Z to 2026-06-12T11:00:00Z.",
+   "The tool defines drift as passed at the start of the window and failing at the end.",
+   "Devices failing in every snapshot are counted as persistent failures, not drift.",
+   "The `screen_lock` check severity is medium."
+  ]
+ }
+}

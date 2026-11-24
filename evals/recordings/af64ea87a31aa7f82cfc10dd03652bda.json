@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "action",
+  "restated_question": "Open remediation tickets for Globex devices that are currently failing the screen lock compliance check.",
+  "steps": [
+   {
+    "tool": "get_compliance_status",
+    "purpose": "Find devices currently failing the screen lock check and get their device IDs and check ID for ticket creation."
+   }
+  ],
+  "wants_actions": true,
+  "out_of_scope_reason": null
+ }
+}

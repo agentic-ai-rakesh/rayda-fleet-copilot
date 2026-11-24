@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "action",
+  "restated_question": "Identify Acme laptops with failing batteries and flag those devices for replacement.",
+  "steps": [
+   {
+    "tool": "detect_battery_end_of_life",
+    "purpose": "Find laptop batteries that are failing or near end of life and collect evidence for replacement decisions"
+   }
+  ],
+  "wants_actions": true,
+  "out_of_scope_reason": null
+ }
+}

@@ -1,0 +1,74 @@
+# Fleet Copilot settings.
+# Relative paths are resolved from the project root.
+# Override this file's location with the FLEET_COPILOT_CONFIG environment variable.
+
+paths:
+  raw_dataset: data/raw/device-telemetry-dataset.ndjson
+  fleet_db: data/processed/fleet.db          # rebuilt on every ingest
+  audit_db: data/audit/audit.db              # append-only, survives re-ingestion
+  quarantine_file: data/quarantine/rejected_records.ndjson
+  actions_db: data/actions/actions.db        # executed (approved) actions
+  checkpoint_db: data/checkpoints/checkpoints.db  # agent state, so approvals can resume
+  log_dir: logs
+  reports_dir: reports
+
+ingestion:
+  # Abort the load (and keep the previous database) if more than this share
+  # of records fail validation.
+  max_reject_ratio: 0.05
+
+device_classification:
+  # Models without a battery by design. Every other model is treated as a laptop.
+  desktop_models:
+    - Mac mini
+
+logging:
+  level: INFO
+  log_file_name: fleet_copilot.log
+  max_bytes: 5000000
+  backup_count: 3
+
+thresholds:
+  low_disk_free_pct: 15           # system volume free space below this is "low"
+  critical_disk_free_pct: 5       # used to project "days until critical"
+  high_memory_used_pct: 85        # RAM use at or above this is "high"
+  battery_cycle_limit: 1000       # rated cycle life of current laptop batteries
+  battery_cycle_warning_ratio: 0.8  # at 80% of the limit a battery is "approaching" end of life
+  battery_capacity_drop_pct: 3    # full-charge capacity loss over the window that counts as decline
+  battery_service_conditions:     # battery condition values that mean "needs service"
+    - Service Recommended
+    - Replace Soon
+    - Replace Now
+
+insights:
+  consistent_share: 0.7     # problem in >= 70% of snapshots -> "consistent"
+  intermittent_share: 0.3   # problem in >= 30% of snapshots -> "intermittent"
+  min_snapshots: 7          # fewer data points than this -> no trend is claimed
+
+tools:
+  max_rows: 50              # larger results are truncated and flagged
+  default_history_days: 30
+
+llm:
+  # Switch provider by changing provider + model here, or per command:
+  #   fleet-copilot --provider openai --model <model> ask ...
+  # Keys go in .env: ANTHROPIC_API_KEY, OPENAI_API_KEY or GOOGLE_API_KEY.
+  # OpenAI / Gemini need the extras: pip install -e ".[openai]" / ".[google]".
+  provider: openai             # anthropic | openai | google
+  model: gpt-5.5               # a model id of the chosen provider
+                               # Claude: provider anthropic, model claude-opus-5-5
+  max_tokens: 16000
+  timeout_seconds: 120
+  max_retries: 2               # SDK retries on rate limits, timeouts and 5xx
+  # Claude only
+  effort: medium               # low | medium | high | xhigh | max
+  server_side_fallback: true   # if Claude declines a request, retry on a fallback model
+  # OpenAI / Gemini only (Claude rejects sampling parameters)
+  temperature: null            # e.g. 0 for more repeatable output
+  reasoning_effort: null       # for reasoning models that support it
+
+agent:
+  max_tool_iterations: 8       # tool-calling rounds before the agent must answer
+  max_answer_retries: 1        # re-drafts allowed when citation checks fail
+  max_question_chars: 2000
+  max_notification_chars: 500

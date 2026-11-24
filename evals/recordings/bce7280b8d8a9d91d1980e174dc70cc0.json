@@ -1,0 +1,21 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Determine whether any Initech laptops are currently failing high-severity compliance checks.",
+  "steps": [
+   {
+    "tool": "get_compliance_status",
+    "purpose": "Find current failing high-severity compliance checks across devices."
+   },
+   {
+    "tool": "list_devices",
+    "purpose": "Identify which failing devices are laptops, if needed from compliance results."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

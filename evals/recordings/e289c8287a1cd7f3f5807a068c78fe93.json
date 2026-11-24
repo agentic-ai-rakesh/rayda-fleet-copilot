@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "insight",
+  "restated_question": "Identify Globex devices experiencing memory pressure and determine whether each is consistently or intermittently short of memory over the observed time window.",
+  "steps": [
+   {
+    "tool": "detect_memory_pressure",
+    "purpose": "Find devices with sustained or occasional high RAM usage, including threshold share, average and peak usage, and RAM size."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "purpose": "executor",
+ "model": "gpt-5.5",
+ "kind": "ai_message",
+ "value": {
+  "type": "ai",
+  "data": {
+   "content": "The available fleet telemetry does not include GPU temperature, so I can\u2019t determine an average GPU temperature across the fleet.",
+   "additional_kwargs": {
+    "refusal": null
+   },
+   "response_metadata": {
+    "token_usage": {
+     "completion_tokens": 26,
+     "prompt_tokens": 3654,
+     "total_tokens": 3680,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+     }
+    },
+    "model_provider": "openai",
+    "model_name": "gpt-5.5-2026-04-23",
+    "system_fingerprint": null,
+    "id": "chatcmpl-EnLxBxN9KVdVqTEegX5FoiGqlIHoZ",
+    "service_tier": "default",
+    "finish_reason": "stop",
+    "logprobs": null,
+    "normalized_finish_reason": "stop"
+   },
+   "type": "ai",
+   "name": null,
+   "id": "lc_run--01a20809-7d89-73bf-ba54-9a7f79421ca6-0",
+   "tool_calls": [],
+   "invalid_tool_calls": [],
+   "usage_metadata": {
+    "input_tokens": 3654,
+    "output_tokens": 26,
+    "total_tokens": 3680,
+    "input_token_details": {
+     "audio": 0,
+     "cache_read": 0
+    },
+    "output_token_details": {
+     "audio": 0,
+     "reasoning": 0
+    }
+   }
+  }
+ }
+}

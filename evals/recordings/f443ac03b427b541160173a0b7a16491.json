@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Identify the company-managed devices that currently have uTorrent installed.",
+  "steps": [
+   {
+    "tool": "search_installed_software",
+    "purpose": "Find devices with installed software whose name contains \u201cuTorrent\u201d."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

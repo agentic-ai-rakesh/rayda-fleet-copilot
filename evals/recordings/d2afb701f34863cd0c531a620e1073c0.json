@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "insight",
+  "restated_question": "Identify company-managed laptop batteries that are approaching end of life.",
+  "steps": [
+   {
+    "tool": "detect_battery_end_of_life",
+    "purpose": "Find laptop batteries at or approaching end of life based on service condition, cycle count, and capacity decline over time."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

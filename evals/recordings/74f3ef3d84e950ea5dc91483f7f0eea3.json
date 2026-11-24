@@ -1,0 +1,14 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": false,
+  "answer": "Cannot determine the average GPU temperature across the fleet as of 2026-06-12T11:00:00Z: the provided tool results do not include GPU temperature telemetry for the devices [1LYSSFD074BB@20260612T0947Z, 7VP16KHV88LM@20260612T1041Z, 8NM23J95R5I6@20260612T0902Z, 9MXJVZ1I0DKA@20260612T0913Z, DLT35MHGTH2D@20260612T0936Z, DSYPSES7SKBB@20260612T1057Z, M4XVHUV1MEPZ@20260612T1100Z, MT7PJB7N5LRE@20260612T0839Z, Q3VUITEGQ400@20260612T0926Z, XSU9UUDGU6AC@20260612T0952Z].",
+  "claims": [],
+  "caveats": [
+   "Missing data: GPU temperature values are not present in the provided tool results, so the fleet average cannot be calculated from them.",
+   "Telemetry is as of 2026-06-12T11:00:00Z."
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "insight",
+  "restated_question": "Determine whether any Globex laptops have batteries at or approaching end of life and may need replacement soon.",
+  "steps": [
+   {
+    "tool": "detect_battery_end_of_life",
+    "purpose": "Identify laptop batteries at or approaching end of life using service condition, cycle count versus rated limit, and capacity decline over time."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

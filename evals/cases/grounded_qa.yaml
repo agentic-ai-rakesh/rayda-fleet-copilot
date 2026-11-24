@@ -1,0 +1,100 @@
+# Grounded question answering.
+# - reference_tool: the call the tool suite checks against ground truth (no LLM).
+# - question: what the agent suite asks end to end (LLM).
+# - expect.truth: a ground-truth key (see evaluation/ground_truth.py); the answer
+#   must name exactly these devices (or contain this count).
+
+- id: qa_low_disk_acme
+  suite: grounded_qa
+  tenant: acme-001
+  question: Which devices at Acme are low on disk space?
+  reference_tool:
+    name: find_devices_by_metric
+    args: {metric: disk_free_pct, comparison: lt, value: 15}
+  expect:
+    truth: low_disk_devices
+    tools_any: [find_devices_by_metric, detect_storage_pressure]
+
+- id: qa_low_disk_globex
+  suite: grounded_qa
+  tenant: globex-002
+  question: Which of our devices are running low on storage right now?
+  reference_tool:
+    name: find_devices_by_metric
+    args: {metric: disk_free_pct, comparison: lt, value: 15}
+  expect:
+    truth: low_disk_devices
+    tools_any: [find_devices_by_metric, detect_storage_pressure]
+
+- id: qa_high_severity_laptops_acme
+  suite: grounded_qa
+  tenant: acme-001
+  question: Show me laptops failing high-severity compliance checks.
+  reference_tool:
+    name: get_compliance_status
+    args: {severity: high, device_type: laptop}
+  expect:
+    truth: high_severity_failing_laptops   # empty: the correct answer is "none"
+    tools_any: [get_compliance_status]
+
+- id: qa_high_severity_laptops_initech
+  suite: grounded_qa
+  tenant: initech-003
+  question: Are any laptops failing a high-severity compliance check?
+  reference_tool:
+    name: get_compliance_status
+    args: {severity: high, device_type: laptop}
+  expect:
+    truth: high_severity_failing_laptops
+    tools_any: [get_compliance_status]
+
+- id: qa_macos_older_than_15_acme
+  suite: grounded_qa
+  tenant: acme-001
+  question: How many devices are running an OS older than macOS 15?
+  reference_tool:
+    name: find_devices_by_os_version
+    args: {os_name: macOS, comparison: lt, version: "15"}
+  expect:
+    truth: macos_older_than_15_count
+    tools_any: [find_devices_by_os_version]
+
+- id: qa_macos_older_than_15_globex
+  suite: grounded_qa
+  tenant: globex-002
+  question: How many of our Macs are on a version older than macOS 15?
+  reference_tool:
+    name: find_devices_by_os_version
+    args: {os_name: macOS, comparison: lt, version: "15"}
+  expect:
+    truth: macos_older_than_15_count
+    tools_any: [find_devices_by_os_version]
+
+- id: qa_screen_lock_failing_initech
+  suite: grounded_qa
+  tenant: initech-003
+  question: Which devices currently fail the screen lock check?
+  reference_tool:
+    name: get_compliance_status
+    args: {check_id: screen_lock, status: fail}
+  expect:
+    truth: failing_check_devices:screen_lock
+    tools_any: [get_compliance_status, detect_compliance_drift]
+
+- id: qa_software_utorrent_initech
+  suite: grounded_qa
+  tenant: initech-003
+  question: Which devices have uTorrent installed?
+  reference_tool:
+    name: search_installed_software
+    args: {name: uTorrent}
+  expect:
+    truth: software_devices:uTorrent
+    tools_any: [search_installed_software]
+
+- id: qa_unanswerable_gpu_temperature
+  suite: grounded_qa
+  tenant: acme-001
+  question: What is the average GPU temperature across our fleet?
+  expect:
+    cannot_answer: true   # no GPU telemetry: the agent must say so, not guess

@@ -1,0 +1,40 @@
+{
+ "purpose": "action_proposer",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "proposals": [
+   {
+    "action": "open_remediation_ticket",
+    "device_id": "1LYSSFD074BB",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": "os_up_to_date",
+    "note": "Update macOS on 1LYSSFD074BB; os_up_to_date compliance check failed as of the latest snapshot.",
+    "reason": null,
+    "message": null,
+    "justification": "The requested replacement flag is not supported by the returned hardware health evidence, but the device has a failing os_up_to_date compliance check.",
+    "evidence_ids": [
+     "1LYSSFD074BB@20260612T0947Z"
+    ]
+   },
+   {
+    "action": "open_remediation_ticket",
+    "device_id": "1LYSSFD074BB",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": "screen_lock",
+    "note": "Remediate screen lock configuration on 1LYSSFD074BB; screen_lock compliance check failed as of the latest snapshot.",
+    "reason": null,
+    "message": null,
+    "justification": "The requested replacement flag is not supported by the returned hardware health evidence, but the device has a failing screen_lock compliance check.",
+    "evidence_ids": [
+     "1LYSSFD074BB@20260612T0947Z"
+    ]
+   }
+  ],
+  "no_action_reason": "No replacement flag is proposed for 1LYSSFD074BB because the returned evidence as of 2026-06-12T11:00:00Z does not support replacement: battery condition is Normal, storage is not low, and memory pressure is not high."
+ }
+}

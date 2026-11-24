@@ -1,0 +1,43 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": true,
+  "answer": "2 of 10 devices are low on disk space as of 2026-06-12T11:00:00Z [MT7PJB7N5LRE@20260612T0839Z, 8NM23J95R5I6@20260612T0902Z].\n\n- MT7PJB7N5LRE \u2014 MacBook Pro laptop, employee_id emp-acme-1003, disk_free_pct 2.0 [MT7PJB7N5LRE@20260612T0839Z].\n- 8NM23J95R5I6 \u2014 ThinkPad X1 Carbon laptop, employee_id emp-acme-1005, disk_free_pct 2.59 [8NM23J95R5I6@20260612T0902Z].\n\nInsight: These two devices have very little system disk free space, with disk_free_pct values of 2.0 and 2.59 respectively [MT7PJB7N5LRE@20260612T0839Z, 8NM23J95R5I6@20260612T0902Z].",
+  "claims": [
+   {
+    "statement": "2 of 10 devices are low on disk space as of 2026-06-12T11:00:00Z.",
+    "evidence_ids": [
+     "MT7PJB7N5LRE@20260612T0839Z",
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   },
+   {
+    "statement": "MT7PJB7N5LRE is a MacBook Pro laptop for employee_id emp-acme-1003 with disk_free_pct 2.0.",
+    "evidence_ids": [
+     "MT7PJB7N5LRE@20260612T0839Z"
+    ]
+   },
+   {
+    "statement": "8NM23J95R5I6 is a ThinkPad X1 Carbon laptop for employee_id emp-acme-1005 with disk_free_pct 2.59.",
+    "evidence_ids": [
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   },
+   {
+    "statement": "The low-disk devices have disk_free_pct values of 2.0 and 2.59.",
+    "evidence_ids": [
+     "MT7PJB7N5LRE@20260612T0839Z",
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   }
+  ],
+  "caveats": [
+   "The tool defined low disk space as system disk free % below 15.",
+   "Values come from each device's latest snapshot in the dataset as of 2026-06-12T11:00:00Z.",
+   "Disk means the system volume: '/' on macOS and 'C:\\' on Windows.",
+   "The tool checked 10 devices and reported 0 devices without data."
+  ]
+ }
+}

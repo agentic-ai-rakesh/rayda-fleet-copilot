@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Show the full latest state and details for device DARFCP0BQM2G.",
+  "steps": [
+   {
+    "tool": "get_device_details",
+    "purpose": "Retrieve full latest state for device DARFCP0BQM2G"
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

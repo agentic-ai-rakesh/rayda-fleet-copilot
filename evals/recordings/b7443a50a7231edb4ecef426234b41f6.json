@@ -1,0 +1,61 @@
+{
+ "purpose": "executor",
+ "model": "gpt-5.5",
+ "kind": "ai_message",
+ "value": {
+  "type": "ai",
+  "data": {
+   "content": "As of 2026-06-12T11:00:00Z, 2 devices are running low on storage: JRZSGXVMKE6M (ThinkPad X1 Carbon, emp-globex-1005) with 2.0% free, and E4V0SB5I0MYU (Dell XPS 15, emp-globex-1004) with 2.39% free.",
+   "additional_kwargs": {
+    "refusal": null
+   },
+   "response_metadata": {
+    "token_usage": {
+     "completion_tokens": 94,
+     "prompt_tokens": 2209,
+     "total_tokens": 2303,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 1664,
+      "image_tokens": null,
+      "text_tokens": null
+     }
+    },
+    "model_provider": "openai",
+    "model_name": "gpt-5.5-2026-04-23",
+    "system_fingerprint": null,
+    "id": "chatcmpl-EnLv1G7iYW9dokjSbj44xIliS1eFM",
+    "service_tier": "default",
+    "finish_reason": "stop",
+    "logprobs": null,
+    "normalized_finish_reason": "stop"
+   },
+   "type": "ai",
+   "name": null,
+   "id": "lc_run--01a20807-6f86-70e0-a9be-d65f8d4446e2-0",
+   "tool_calls": [],
+   "invalid_tool_calls": [],
+   "usage_metadata": {
+    "input_tokens": 2209,
+    "output_tokens": 94,
+    "total_tokens": 2303,
+    "input_token_details": {
+     "audio": 0,
+     "cache_read": 1664
+    },
+    "output_token_details": {
+     "audio": 0,
+     "reasoning": 0
+    }
+   }
+  }
+ }
+}

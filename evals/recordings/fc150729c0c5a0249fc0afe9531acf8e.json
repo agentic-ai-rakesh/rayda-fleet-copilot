@@ -1,0 +1,12 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "What is the average GPU temperature across Acme's device fleet?",
+  "steps": [],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

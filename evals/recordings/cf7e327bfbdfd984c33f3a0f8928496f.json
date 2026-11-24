@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Identify Acme devices that are currently low on disk space.",
+  "steps": [
+   {
+    "tool": "find_devices_by_metric",
+    "purpose": "Find devices whose current disk_free_pct is below a low-space threshold."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "How many Globex Mac devices are currently running a macOS version older than macOS 15?",
+  "steps": [
+   {
+    "tool": "find_devices_by_os_version",
+    "purpose": "Find current macOS devices with OS version less than 15 and count matching devices."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

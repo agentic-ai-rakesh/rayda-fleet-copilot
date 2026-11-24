@@ -1,0 +1,68 @@
+# Insight and trend detection over the 30-day time series.
+
+- id: insight_battery_eol_acme
+  suite: insight
+  tenant: acme-001
+  question: Which laptop batteries are approaching end of life?
+  reference_tool: {name: detect_battery_end_of_life}
+  expect:
+    truth: battery_eol_devices
+    tools_any: [detect_battery_end_of_life]
+
+- id: insight_battery_eol_globex_none
+  suite: insight
+  tenant: globex-002
+  question: Do any of our laptop batteries need replacing soon?
+  reference_tool: {name: detect_battery_end_of_life}
+  expect:
+    truth: battery_eol_devices   # empty for Globex
+    tools_any: [detect_battery_end_of_life]
+
+- id: insight_memory_consistent_initech
+  suite: insight
+  tenant: initech-003
+  question: Which devices are consistently constrained by RAM?
+  reference_tool: {name: detect_memory_pressure}
+  expect:
+    truth: memory_pressure_devices
+    tools_any: [detect_memory_pressure]
+
+- id: insight_memory_globex
+  suite: insight
+  tenant: globex-002
+  question: Which devices run short of memory, and is it constant or occasional?
+  reference_tool: {name: detect_memory_pressure}
+  expect:
+    truth: memory_pressure_devices
+    tools_any: [detect_memory_pressure]
+
+- id: insight_storage_initech
+  suite: insight
+  tenant: initech-003
+  question: Which devices are consistently low on storage, and how fast is it getting worse?
+  reference_tool: {name: detect_storage_pressure}
+  expect:
+    truth: storage_pressure_devices
+    tools_any: [detect_storage_pressure]
+
+- id: insight_compliance_drift_acme
+  suite: insight
+  tenant: acme-001
+  question: Has our screen lock compliance drifted over the last month?
+  reference_tool:
+    name: detect_compliance_drift
+    args: {check_id: screen_lock}
+  expect:
+    truth: compliance_drift_devices:screen_lock
+    tools_any: [detect_compliance_drift]
+
+- id: insight_compliance_drift_globex
+  suite: insight
+  tenant: globex-002
+  question: Which devices started failing compliance checks during the month?
+  reference_tool:
+    name: detect_compliance_drift
+    args: {check_id: screen_lock}
+  expect:
+    truth: compliance_drift_devices:screen_lock
+    tools_any: [detect_compliance_drift]

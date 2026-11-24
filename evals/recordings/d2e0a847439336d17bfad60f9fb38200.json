@@ -1,0 +1,40 @@
+{
+ "purpose": "action_proposer",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "proposals": [
+   {
+    "action": "open_remediation_ticket",
+    "device_id": "CUXW0BQSV1B7",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": "screen_lock",
+    "note": "Device is failing the screen_lock compliance check with medium severity as of 2026-06-12T11:00:00Z.",
+    "reason": null,
+    "message": null,
+    "justification": "CUXW0BQSV1B7 is listed as failing check_id screen_lock with medium severity, making it a remediation-ticket candidate.",
+    "evidence_ids": [
+     "CUXW0BQSV1B7@20260612T1047Z"
+    ]
+   },
+   {
+    "action": "open_remediation_ticket",
+    "device_id": "JRZSGXVMKE6M",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": "screen_lock",
+    "note": "Device is failing the screen_lock compliance check with medium severity as of 2026-06-12T11:00:00Z.",
+    "reason": null,
+    "message": null,
+    "justification": "JRZSGXVMKE6M is listed as failing check_id screen_lock with medium severity, making it a remediation-ticket candidate.",
+    "evidence_ids": [
+     "JRZSGXVMKE6M@20260612T1046Z"
+    ]
+   }
+  ],
+  "no_action_reason": null
+ }
+}

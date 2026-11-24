@@ -1,0 +1,70 @@
+{
+ "purpose": "executor",
+ "model": "gpt-5.5",
+ "kind": "ai_message",
+ "value": {
+  "type": "ai",
+  "data": {
+   "content": "",
+   "additional_kwargs": {
+    "refusal": null
+   },
+   "response_metadata": {
+    "token_usage": {
+     "completion_tokens": 24,
+     "prompt_tokens": 1713,
+     "total_tokens": 1737,
+     "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0,
+      "text_tokens": null
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": null,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null
+     }
+    },
+    "model_provider": "openai",
+    "model_name": "gpt-5.5-2026-04-23",
+    "system_fingerprint": null,
+    "id": "chatcmpl-EnLuFLj4GHGrda4TScjhZKK9CPQDt",
+    "service_tier": "default",
+    "finish_reason": "tool_calls",
+    "logprobs": null,
+    "normalized_finish_reason": "tool_call"
+   },
+   "type": "ai",
+   "name": null,
+   "id": "lc_run--01a20806-b3bf-769f-a62d-ed49799e529e-0",
+   "tool_calls": [
+    {
+     "name": "get_device_details",
+     "args": {
+      "device_id": "1LYSSFD074BB"
+     },
+     "id": "call_ICrUUr5kQ4UGyYUcLuQ3xhC9",
+     "type": "tool_call"
+    }
+   ],
+   "invalid_tool_calls": [],
+   "usage_metadata": {
+    "input_tokens": 1713,
+    "output_tokens": 24,
+    "total_tokens": 1737,
+    "input_token_details": {
+     "audio": 0,
+     "cache_read": 0
+    },
+    "output_token_details": {
+     "audio": 0,
+     "reasoning": 0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "action",
+  "restated_question": "Flag device 1LYSSFD074BB for hardware replacement.",
+  "steps": [
+   {
+    "tool": "get_device_details",
+    "purpose": "Verify the device exists and gather current state to support a replacement flag"
+   }
+  ],
+  "wants_actions": true,
+  "out_of_scope_reason": null
+ }
+}

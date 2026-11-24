@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "insight",
+  "restated_question": "Which Globex devices started failing compliance checks during the month?",
+  "steps": [
+   {
+    "tool": "detect_compliance_drift",
+    "purpose": "Identify devices that began failing compliance checks during the time window and the relevant check ids."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

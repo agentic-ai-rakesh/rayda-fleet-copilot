@@ -1,0 +1,21 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "action",
+  "restated_question": "Find Initech devices that are constrained by RAM and propose appropriate RAM upgrades.",
+  "steps": [
+   {
+    "tool": "detect_memory_pressure",
+    "purpose": "Identify devices with consistent or intermittent RAM pressure, including RAM size and usage statistics to justify upgrade proposals."
+   },
+   {
+    "tool": "get_device_details",
+    "purpose": "For each RAM-constrained device, confirm current hardware/memory details needed to formulate an upgrade recommendation."
+   }
+  ],
+  "wants_actions": true,
+  "out_of_scope_reason": null
+ }
+}

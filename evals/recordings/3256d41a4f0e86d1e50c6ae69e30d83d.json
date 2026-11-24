@@ -1,0 +1,61 @@
+{
+ "purpose": "action_proposer",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "proposals": [
+   {
+    "action": "flag_device_for_replacement",
+    "device_id": "7VP16KHV88LM",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": null,
+    "note": null,
+    "reason": "Battery end of life: OS reports Service Recommended, 1049 charge cycles at/past rated 1000, and full-charge capacity fell from 4348 to 4166 mAh.",
+    "message": null,
+    "justification": "As of 2026-06-12T11:00:00Z, this laptop battery is failing/end of life based on Service Recommended condition, cycle count at/past limit, and declining full-charge capacity.",
+    "evidence_ids": [
+     "7VP16KHV88LM@20260514T1109Z",
+     "7VP16KHV88LM@20260530T0916Z",
+     "7VP16KHV88LM@20260612T1041Z"
+    ]
+   },
+   {
+    "action": "flag_device_for_replacement",
+    "device_id": "8NM23J95R5I6",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": null,
+    "note": null,
+    "reason": "Battery end of life: OS reports Service Recommended, 1157 charge cycles at/past rated 1000, and full-charge capacity fell from 4043 to 3872 mAh.",
+    "message": null,
+    "justification": "As of 2026-06-12T11:00:00Z, this laptop battery is failing/end of life based on Service Recommended condition, cycle count beyond limit, and declining full-charge capacity.",
+    "evidence_ids": [
+     "8NM23J95R5I6@20260514T1010Z",
+     "8NM23J95R5I6@20260523T0901Z",
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   },
+   {
+    "action": "flag_device_for_replacement",
+    "device_id": "M4XVHUV1MEPZ",
+    "employee_id": null,
+    "component": null,
+    "spec": null,
+    "check_id": null,
+    "note": null,
+    "reason": "Battery end of life: OS reports Service Recommended, 948 charge cycles over 80% of rated 1000, and full-charge capacity fell from 3406 to 3262 mAh.",
+    "message": null,
+    "justification": "As of 2026-06-12T11:00:00Z, this laptop battery is failing/end of life based on Service Recommended condition, high cycle count, and declining full-charge capacity.",
+    "evidence_ids": [
+     "M4XVHUV1MEPZ@20260514T0840Z",
+     "M4XVHUV1MEPZ@20260524T1005Z",
+     "M4XVHUV1MEPZ@20260612T1100Z"
+    ]
+   }
+  ],
+  "no_action_reason": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "insight",
+  "restated_question": "Identify devices that are consistently low on system disk storage and describe how quickly their storage situation is worsening over time.",
+  "steps": [
+   {
+    "tool": "detect_storage_pressure",
+    "purpose": "Find devices with sustained low disk space, current low storage, daily trend, and projected time until critically full."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

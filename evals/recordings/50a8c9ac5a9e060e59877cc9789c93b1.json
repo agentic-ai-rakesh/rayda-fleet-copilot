@@ -1,0 +1,17 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "question",
+  "restated_question": "Identify Globex devices that are currently running low on storage.",
+  "steps": [
+   {
+    "tool": "find_devices_by_metric",
+    "purpose": "Find devices whose current system disk free percentage is below a low-storage threshold."
+   }
+  ],
+  "wants_actions": false,
+  "out_of_scope_reason": null
+ }
+}

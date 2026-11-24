@@ -1,0 +1,33 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": true,
+  "answer": "2 of 7 devices have uTorrent installed as of 2026-06-12T11:00:00Z [I3JLKILKQTAC@20260612T1057Z, W2656QDAE2ZJ@20260612T0948Z].\n\n- I3JLKILKQTAC has uTorrent 3.6 installed, published by Rainberry Inc [I3JLKILKQTAC@20260612T1057Z].\n- W2656QDAE2ZJ has uTorrent 3.6 installed, published by Rainberry Inc [W2656QDAE2ZJ@20260612T0948Z].",
+  "claims": [
+   {
+    "statement": "uTorrent is installed on 2 of 7 devices as of 2026-06-12T11:00:00Z.",
+    "evidence_ids": [
+     "I3JLKILKQTAC@20260612T1057Z",
+     "W2656QDAE2ZJ@20260612T0948Z"
+    ]
+   },
+   {
+    "statement": "Device I3JLKILKQTAC has uTorrent 3.6 installed, published by Rainberry Inc.",
+    "evidence_ids": [
+     "I3JLKILKQTAC@20260612T1057Z"
+    ]
+   },
+   {
+    "statement": "Device W2656QDAE2ZJ has uTorrent 3.6 installed, published by Rainberry Inc.",
+    "evidence_ids": [
+     "W2656QDAE2ZJ@20260612T0948Z"
+    ]
+   }
+  ],
+  "caveats": [
+   "Values come from each device's latest snapshot in the dataset as of 2026-06-12T11:00:00Z."
+  ]
+ }
+}

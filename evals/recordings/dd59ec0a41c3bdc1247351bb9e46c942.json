@@ -1,0 +1,73 @@
+{
+ "purpose": "responder",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "can_answer": true,
+  "answer": "**3 laptop batteries are approaching or at end of life as of 2026-06-12T11:00:00Z:** 7VP16KHV88LM, 8NM23J95R5I6, and M4XVHUV1MEPZ [7VP16KHV88LM@20260612T1041Z] [8NM23J95R5I6@20260612T0902Z] [M4XVHUV1MEPZ@20260612T1100Z].\n\n- **7VP16KHV88LM** \u2014 Battery is at end of life: OS reports **Service Recommended**, cycle count is **1049** against a rated **1000**, and full-charge capacity fell **4.2%** from **4348 \u2192 4166 mAh** [7VP16KHV88LM@20260514T1109Z] [7VP16KHV88LM@20260530T0916Z] [7VP16KHV88LM@20260612T1041Z].\n  - Supporting evidence: condition changed from **Normal** to **Service Recommended**, cycle count increased from **1017** to **1049**, and capacity changed from **4348** to **4166** [7VP16KHV88LM@20260514T1109Z] [7VP16KHV88LM@20260530T0916Z] [7VP16KHV88LM@20260612T1041Z].\n  - Explanation: batteries past rated cycle life or flagged for service can hold less charge and fail unexpectedly [7VP16KHV88LM@20260530T0916Z] [7VP16KHV88LM@20260612T1041Z].\n\n- **8NM23J95R5I6** \u2014 Battery is at end of life: OS reports **Service Recommended**, cycle count is **1157** against a rated **1000**, and full-charge capacity fell **4.2%** from **4043 \u2192 3872 mAh** [8NM23J95R5I6@20260514T1010Z] [8NM23J95R5I6@20260523T0901Z] [8NM23J95R5I6@20260612T0902Z].\n  - Supporting evidence: condition changed from **Normal** to **Service Recommended**, cycle count increased from **1127** to **1157**, and capacity changed from **4043** to **3872** [8NM23J95R5I6@20260514T1010Z] [8NM23J95R5I6@20260523T0901Z] [8NM23J95R5I6@20260612T0902Z].\n  - Explanation: batteries past rated cycle life or flagged for service can hold less charge and fail unexpectedly [8NM23J95R5I6@20260523T0901Z] [8NM23J95R5I6@20260612T0902Z].\n\n- **M4XVHUV1MEPZ** \u2014 Battery is at end of life: OS reports **Service Recommended**, cycle count is **948** against a rated **1000**, and full-charge capacity fell **4.2%** from **3406 \u2192 3262 mAh** [M4XVHUV1MEPZ@20260514T0840Z] [M4XVHUV1MEPZ@20260524T1005Z] [M4XVHUV1MEPZ@20260612T1100Z].\n  - Supporting evidence: condition changed from **Normal** to **Service Recommended**, cycle count increased from **928** to **948**, and capacity changed from **3406** to **3262** [M4XVHUV1MEPZ@20260514T0840Z] [M4XVHUV1MEPZ@20260524T1005Z] [M4XVHUV1MEPZ@20260612T1100Z].\n  - Explanation: batteries past rated cycle life or flagged for service can hold less charge and fail unexpectedly [M4XVHUV1MEPZ@20260524T1005Z] [M4XVHUV1MEPZ@20260612T1100Z].",
+  "claims": [
+   {
+    "statement": "There are 3 laptop batteries approaching or at end of life as of 2026-06-12T11:00:00Z: 7VP16KHV88LM, 8NM23J95R5I6, and M4XVHUV1MEPZ.",
+    "evidence_ids": [
+     "7VP16KHV88LM@20260612T1041Z",
+     "8NM23J95R5I6@20260612T0902Z",
+     "M4XVHUV1MEPZ@20260612T1100Z"
+    ]
+   },
+   {
+    "statement": "7VP16KHV88LM is at end of life with OS condition Service Recommended, cycle count 1049 against rated 1000, and full-charge capacity down 4.2% from 4348 to 4166 mAh.",
+    "evidence_ids": [
+     "7VP16KHV88LM@20260514T1109Z",
+     "7VP16KHV88LM@20260530T0916Z",
+     "7VP16KHV88LM@20260612T1041Z"
+    ]
+   },
+   {
+    "statement": "7VP16KHV88LM changed from battery condition Normal to Service Recommended, cycle count increased from 1017 to 1049, and full-charge capacity changed from 4348 to 4166.",
+    "evidence_ids": [
+     "7VP16KHV88LM@20260514T1109Z",
+     "7VP16KHV88LM@20260530T0916Z",
+     "7VP16KHV88LM@20260612T1041Z"
+    ]
+   },
+   {
+    "statement": "8NM23J95R5I6 is at end of life with OS condition Service Recommended, cycle count 1157 against rated 1000, and full-charge capacity down 4.2% from 4043 to 3872 mAh.",
+    "evidence_ids": [
+     "8NM23J95R5I6@20260514T1010Z",
+     "8NM23J95R5I6@20260523T0901Z",
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   },
+   {
+    "statement": "8NM23J95R5I6 changed from battery condition Normal to Service Recommended, cycle count increased from 1127 to 1157, and full-charge capacity changed from 4043 to 3872.",
+    "evidence_ids": [
+     "8NM23J95R5I6@20260514T1010Z",
+     "8NM23J95R5I6@20260523T0901Z",
+     "8NM23J95R5I6@20260612T0902Z"
+    ]
+   },
+   {
+    "statement": "M4XVHUV1MEPZ is at end of life with OS condition Service Recommended, cycle count 948 against rated 1000, and full-charge capacity down 4.2% from 3406 to 3262 mAh.",
+    "evidence_ids": [
+     "M4XVHUV1MEPZ@20260514T0840Z",
+     "M4XVHUV1MEPZ@20260524T1005Z",
+     "M4XVHUV1MEPZ@20260612T1100Z"
+    ]
+   },
+   {
+    "statement": "M4XVHUV1MEPZ changed from battery condition Normal to Service Recommended, cycle count increased from 928 to 948, and full-charge capacity changed from 3406 to 3262.",
+    "evidence_ids": [
+     "M4XVHUV1MEPZ@20260514T0840Z",
+     "M4XVHUV1MEPZ@20260524T1005Z",
+     "M4XVHUV1MEPZ@20260612T1100Z"
+    ]
+   }
+  ],
+  "caveats": [
+   "The tool\u2019s end-of-life threshold is: battery condition in ['Service Recommended', 'Replace Soon', 'Replace Now'] or cycle count \u2265 1000.",
+   "The tool\u2019s approaching threshold is: cycle count \u2265 80% of the limit, or full-charge capacity down \u2265 3% over the window.",
+   "No design capacity is reported, so health is not expressed as a percentage of original capacity.",
+   "Snapshots without battery data are skipped."
+  ]
+ }
+}

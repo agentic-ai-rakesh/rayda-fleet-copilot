@@ -1,0 +1,12 @@
+{
+ "purpose": "planner",
+ "model": "gpt-5.5",
+ "kind": "structured",
+ "value": {
+  "intent": "out_of_scope",
+  "restated_question": "The user asks to write a haiku about the ocean, which is not about Acme's device telemetry.",
+  "steps": [],
+  "wants_actions": false,
+  "out_of_scope_reason": "Creative writing is outside the scope of Acme company-managed device telemetry and IT fleet administration."
+ }
+}
